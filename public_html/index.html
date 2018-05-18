@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/validacija.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <h1>BMI kalkulator</h1>
+                <p></p>
+                <p>QA, mart 2018. prepodnevna grupa</p>
+                <p>Milica Subotić</p>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Unos podataka</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form>
+                                    <!-- <label for="visina">
+                                        Unesite visinu:
+                                    </label>
+                                    <input class="form-control" type="number" step="any" min="1" max="250" id="visina" placeholder="Primer: 180 (centimetri)">
+                                    <br>
+
+                                    <label for="masa">
+                                        Unesite masu:
+                                    </label>
+                                    <input class="form-control" type="number" step="any" min="1" max="250" id="masa" placeholder="Primer: 80 (kilogrami)">
+                                    <br>
+                                    <input class="btn btn-success" type="button" value="Izračunaj" onClick="validiraj();"> -->
+                                    <div id="div_visina" class="form-group">
+                                        <label class="control-label" for="visina">Unesite visinu:</label>
+                                        <input type="number" class="form-control" step="any" min="1" max="250" id="visina" placeholder="Primer: 180 (centimetri)">
+                                    </div>
+                                    
+                                    <div id="div_masa" class="form-group">
+                                        <label class="control-label" for="masa">Unesite masu:</label>
+                                        <input class="form-control" type="number" step="any" min="1" max="250" id="masa" placeholder="Primer: 80 (kilogrami)">
+                                    </div>
+                                    <input class="btn btn-success" type="button" value="Izračunaj" onClick="validiraj();">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div id="rezultat" class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Rezultat kalkulacije</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div id="rezultat_poruka">
+                                    Unesite podatke i kliknite na dugme Izračunaj!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/validacija.js" type="text/javascript"></script>
+
+    </body>
+</html>
